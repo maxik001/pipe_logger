@@ -43,7 +43,45 @@ end;
 ```
 
 # Documentation
-...
+
+## Package Procedures
+
+### MSG_SEND
+```sql
+pipe_logger.msg_send(
+  msg_text VARCHAR2, 
+  msg_type VARCHAR2 default NULL
+);
+```
+
+#### Parameters
+
+<table border="0">
+  <tr>
+    <th>Parameter</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>msg_text</td>
+    <td>Log message text.</td>
+  </tr>
+  <tr>
+    <td>msg_type</td>
+    <td>This an optional attribute set message type. Available values see below.</td>
+  </tr>
+</table>
+
+<table border="0">
+  <tr>
+    <th>MSG_TYPE Available values</th>
+  </tr>
+  <tr><td>Info</td></tr>
+  <tr><td>Warning</td></tr>
+  <tr><td>Error</td></tr>
+</table>
+
+
+
 
 # License
 This project is uses the [MIT license](LICENSE).
